@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Entrepreneur Roadmap - Dec 2025</title>
+    <title>GROWZIO Books - Complete Roadmap (2 Dec - 1 Jan)</title>
     <style>
         * {
             box-sizing: border-box;
@@ -52,25 +52,142 @@
             padding: 0 15px;
         }
         
-        .goal-box {
-            background: #e3f2fd;
-            border-left: 5px solid #2196f3;
-            padding: 18px;
+        /* Store Analysis Section */
+        .analysis-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
             margin: 25px 0;
+            border-left: 5px solid #81B441;
+        }
+        
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .strength-box {
+            background: #e7f4e4;
+            border: 1px solid #81B441;
             border-radius: 10px;
+            padding: 15px;
+        }
+        
+        .weakness-box {
+            background: #ffeaea;
+            border: 1px solid #ff4444;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        
+        .strength-box h4, .weakness-box h4 {
             display: flex;
             align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
         }
         
-        .goal-icon {
-            font-size: 2rem;
-            margin-right: 15px;
-            color: #2196f3;
+        .strength-box h4 i {
+            color: #81B441;
         }
         
-        .goal-text h3 {
-            color: #1565c0;
+        .weakness-box h4 i {
+            color: #ff4444;
+        }
+        
+        /* Video Priority Section */
+        .priority-section {
+            background: #fff8e1;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+            border: 2px solid #ffb300;
+        }
+        
+        .priority-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .priority-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .priority-number {
+            background: #4facfe;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .priority-content h4 {
+            color: #2c3e50;
             margin-bottom: 5px;
+        }
+        
+        .priority-content p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        /* Tools Section */
+        .tools-section {
+            background: #e8f4fd;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .tool-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .tool-card i {
+            font-size: 2.5rem;
+            color: #4facfe;
+            margin-bottom: 10px;
+        }
+        
+        .tool-card h4 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .tool-card p {
+            color: #666;
+            font-size: 0.9rem;
         }
         
         /* Timeline Styling */
@@ -246,6 +363,81 @@
             transform: scale(1.3);
         }
         
+        /* Daily Schedule */
+        .daily-schedule {
+            background: #f0f7ff;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+            border: 2px solid #4facfe;
+        }
+        
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .time-slot {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            border-left: 4px solid #81B441;
+        }
+        
+        .time-label {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .time-label i {
+            color: #81B441;
+        }
+        
+        /* Quick Actions */
+        .quick-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 25px 0;
+            justify-content: center;
+        }
+        
+        .action-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #4facfe;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+        }
+        
+        .action-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(79, 172, 254, 0.5);
+            background: #3a9cea;
+        }
+        
+        .action-btn.green {
+            background: #81B441;
+            box-shadow: 0 4px 15px rgba(129, 180, 65, 0.3);
+        }
+        
+        .action-btn.green:hover {
+            background: #6aa034;
+            box-shadow: 0 6px 20px rgba(129, 180, 65, 0.5);
+        }
+        
         .download-btn {
             display: block;
             width: 100%;
@@ -279,6 +471,7 @@
             font-size: 0.9rem;
         }
         
+        /* Responsive Styles */
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
@@ -307,6 +500,19 @@
             .timeline::before {
                 left: 17px;
             }
+            
+            .analysis-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quick-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .action-btn {
+                justify-content: center;
+            }
         }
         
         @media (max-width: 480px) {
@@ -327,63 +533,249 @@
                 left: 15px;
             }
         }
+        
+        /* Highlight Styles */
+        .highlight {
+            background: linear-gradient(120deg, #a8e06380 0%, #81B44180 100%);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .important-note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .quote-box {
+            background: #e8f4fd;
+            border-left: 4px solid #4facfe;
+            padding: 15px;
+            margin: 15px 0;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-road"></i> Student Entrepreneur Roadmap</h1>
-            <p>December 2025 - 1-2 Hours Daily | College ke Saath Business Launch</p>
+            <h1><i class="fas fa-road"></i> GROWZIO BOOKS - COMPLETE ROADMAP</h1>
+            <p>2 December 2024 - 1 January 2025 | Video Content Strategy & Sales Growth</p>
         </div>
         
-        <div class="goal-box">
-            <div class="goal-icon">
-                <i class="fas fa-bullseye"></i>
-            </div>
-            <div class="goal-text">
-                <h3>🎯 GOAL: January 2026 Tak Business Launch</h3>
-                <p>30 Days ka Content Ready | Email List 300+ | Ads Setup Complete</p>
+        <!-- Store Analysis -->
+        <div class="analysis-section">
+            <h2><i class="fas fa-chart-bar"></i> Your Store Analysis</h2>
+            <div class="analysis-grid">
+                <div class="strength-box">
+                    <h4><i class="fas fa-check-circle"></i> STRONG POINTS</h4>
+                    <ul class="task-list">
+                        <li>25+ Premium Books Available</li>
+                        <li>Professional Mobile-Friendly Design</li>
+                        <li>Complete Payment System (JazzCash, Easypaisa, Binance)</li>
+                        <li>Advanced Features: Wishlist, Cart, Reviews</li>
+                        <li>Optimized for Pakistani Audience</li>
+                    </ul>
+                </div>
+                <div class="weakness-box">
+                    <h4><i class="fas fa-exclamation-triangle"></i> NEEDS IMPROVEMENT</h4>
+                    <ul class="task-list">
+                        <li><span class="highlight">Video Content Missing</span> (Most Important!)</li>
+                        <li>Social Media Presence Weak</li>
+                        <li>Traffic Generation Needed</li>
+                        <li>Customer Trust Building Required</li>
+                        <li>Email List Small</li>
+                    </ul>
+                </div>
             </div>
         </div>
         
+        <!-- Video Priority -->
+        <div class="priority-section">
+            <h2><i class="fas fa-video"></i> VIDEO CREATION PRIORITY ORDER</h2>
+            <p>Based on your store's most valuable books:</p>
+            
+            <div class="priority-list">
+                <div class="priority-item">
+                    <div class="priority-number">1</div>
+                    <div class="priority-content">
+                        <h4>DIGITAL MARKETING ROADMAP</h4>
+                        <p>Highest demand in Pakistan. Create "5 Digital Marketing Secrets" video.</p>
+                    </div>
+                </div>
+                
+                <div class="priority-item">
+                    <div class="priority-number">2</div>
+                    <div class="priority-content">
+                        <h4>WEB DEVELOPER ROADMAP</h4>
+                        <p>Second most popular. Create "Web Dev in 2025" tutorial video.</p>
+                    </div>
+                </div>
+                
+                <div class="priority-item">
+                    <div class="priority-number">3</div>
+                    <div class="priority-content">
+                        <h4>PROMPT ENGINEER'S ROADMAP</h4>
+                        <p>AI trend. Create "Earn with AI" case study video.</p>
+                    </div>
+                </div>
+                
+                <div class="priority-item">
+                    <div class="priority-number">4</div>
+                    <div class="priority-content">
+                        <h4>CYBERSECURITY ROADMAP</h4>
+                        <p>High-value niche. Create "Cybersecurity Career" guide video.</p>
+                    </div>
+                </div>
+                
+                <div class="priority-item">
+                    <div class="priority-number">5</div>
+                    <div class="priority-content">
+                        <h4>FREELANCING SUCCESS GUIDE</h4>
+                        <p>High conversion. Create "Freelancing Success Story" video.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="important-note">
+                <strong><i class="fas fa-lightbulb"></i> PRO TIP:</strong> Har video ke end mein store ka link daalo aur "15% discount for viewers" offer do.
+            </div>
+        </div>
+        
+        <!-- Free AI Tools -->
+        <div class="tools-section">
+            <h2><i class="fas fa-robot"></i> FREE AI TOOLS TO SAVE TIME</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <i class="fas fa-video"></i>
+                    <h4>CapCut</h4>
+                    <p>Video editing with AI features. Auto-captions, templates.</p>
+                </div>
+                
+                <div class="tool-card">
+                    <i class="fas fa-image"></i>
+                    <h4>Canva</h4>
+                    <p>Thumbnails, graphics, templates. AI image generation available.</p>
+                </div>
+                
+                <div class="tool-card">
+                    <i class="fas fa-headphones"></i>
+                    <h4>ElevenLabs</h4>
+                    <p>Free AI voiceovers. Monthly free credits.</p>
+                </div>
+                
+                <div class="tool-card">
+                    <i class="fas fa-pen-fancy"></i>
+                    <h4>ChatGPT</h4>
+                    <p>Script writing, content ideas, hashtags, captions.</p>
+                </div>
+                
+                <div class="tool-card">
+                    <i class="fas fa-music"></i>
+                    <h4>YouTube Audio Library</h4>
+                    <p>Copyright-free music for videos.</p>
+                </div>
+                
+                <div class="tool-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>TubeBuddy</h4>
+                    <p>YouTube SEO optimization. Free version available.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Daily Time Schedule -->
+        <div class="daily-schedule">
+            <h2><i class="fas fa-clock"></i> DAILY TIME MANAGEMENT (1-2 HOURS)</h2>
+            <div class="schedule-grid">
+                <div class="time-slot">
+                    <div class="time-label"><i class="fas fa-video"></i> Video Creation (30 mins)</div>
+                    <p>1 video shoot/edit with mobile</p>
+                </div>
+                
+                <div class="time-slot">
+                    <div class="time-label"><i class="fas fa-upload"></i> Upload & Schedule (20 mins)</div>
+                    <p>Post to Instagram, YouTube, Facebook</p>
+                </div>
+                
+                <div class="time-slot">
+                    <div class="time-label"><i class="fas fa-comments"></i> Engagement (20 mins)</div>
+                    <p>Reply to comments, join groups</p>
+                </div>
+                
+                <div class="time-slot">
+                    <div class="time-label"><i class="fas fa-chart-bar"></i> Analytics (10 mins)</div>
+                    <p>Check what's working</p>
+                </div>
+            </div>
+            
+            <div class="quote-box">
+                <i class="fas fa-quote-left"></i> Consistency beats perfection. 1 video daily is better than 7 videos weekly.
+            </div>
+        </div>
+        
+        <!-- Quick Action Buttons -->
+        <div class="quick-actions">
+            <a href="https://www.canva.com/" target="_blank" class="action-btn">
+                <i class="fas fa-palette"></i> Open Canva
+            </a>
+            <a href="https://www.capcut.com/" target="_blank" class="action-btn">
+                <i class="fas fa-video"></i> Open CapCut
+            </a>
+            <a href="https://chat.openai.com/" target="_blank" class="action-btn green">
+                <i class="fas fa-robot"></i> Open ChatGPT
+            </a>
+            <a href="#" class="action-btn green" onclick="saveAsPDF()">
+                <i class="fas fa-download"></i> Save Roadmap
+            </a>
+        </div>
+        
+        <!-- Timeline -->
         <div class="timeline">
+            <h2 style="text-align: center; margin-bottom: 30px;"><i class="fas fa-calendar-alt"></i> MONTHLY ROADMAP</h2>
+            
             <!-- Week 1 -->
             <div class="week-card">
                 <div class="week-number">1</div>
                 <div class="week-header">
-                    <div class="week-title">System Setup Week</div>
-                    <div class="week-dates">Dec 1-7</div>
+                    <div class="week-title">Foundation Week</div>
+                    <div class="week-dates">Dec 2-8</div>
                 </div>
                 
                 <div class="tasks-grid">
                     <div class="task-box daily">
-                        <div class="task-title"><i class="fas fa-calendar-day"></i> Daily Tasks (1-2 Hours)</div>
+                        <div class="task-title"><i class="fas fa-video"></i> Daily Video Tasks</div>
                         <ul class="task-list">
-                            <li>30 mins: Canva Templates Setup</li>
-                            <li>30 mins: Email System (Mailchimp)</li>
-                            <li>20 mins: Content Ideas/Planning</li>
-                            <li>20 mins: Hashtag Research</li>
+                            <li>Create 1-minute book review video</li>
+                            <li>Content: "3 Things from Digital Marketing Book"</li>
+                            <li>Upload to Instagram Reels + YouTube Shorts</li>
+                            <li>Use hashtags: #DigitalMarketing #Pakistan</li>
                         </ul>
                     </div>
                     
                     <div class="task-box weekend">
                         <div class="task-title"><i class="fas fa-weekend"></i> Weekend Tasks</div>
                         <ul class="task-list">
-                            <li>2 hours: 7 Reels Batch Create</li>
-                            <li>1 hour: Content Scheduling</li>
-                            <li>30 mins: Analytics Setup</li>
+                            <li>Batch create 5 videos (top 5 books)</li>
+                            <li>Setup content calendar for December</li>
+                            <li>Create Canva templates for consistency</li>
+                            <li>Join 10 Facebook groups related to skills</li>
                         </ul>
                     </div>
                     
                     <div class="task-box output">
-                        <div class="task-title"><i class="fas fa-flag-checkered"></i> Week End Output</div>
+                        <div class="task-title"><i class="fas fa-flag-checkered"></i> Week Output</div>
                         <ul class="task-list">
-                            <li>✅ Canva Templates Ready (5+)</li>
-                            <li>✅ Email Auto-responder Setup</li>
-                            <li>✅ 7 Instagram Reels Ready</li>
-                            <li>✅ Content Calendar Created</li>
-                            <li>✅ Social Media Bios Updated</li>
+                            <li>✅ 7 Videos created and posted</li>
+                            <li>✅ Content calendar ready</li>
+                            <li>✅ Templates for quick editing</li>
+                            <li>✅ Initial audience in groups</li>
+                            <li>✅ First 10 email subscribers</li>
                         </ul>
                     </div>
                 </div>
@@ -393,38 +785,39 @@
             <div class="week-card">
                 <div class="week-number">2</div>
                 <div class="week-header">
-                    <div class="week-title">Content Creation Week</div>
-                    <div class="week-dates">Dec 8-14</div>
+                    <div class="week-title">Content Strategy Week</div>
+                    <div class="week-dates">Dec 9-15</div>
                 </div>
                 
                 <div class="tasks-grid">
                     <div class="task-box daily">
-                        <div class="task-title"><i class="fas fa-calendar-day"></i> Daily Tasks (1-2 Hours)</div>
+                        <div class="task-title"><i class="fas fa-video"></i> Daily Video Tasks</div>
                         <ul class="task-list">
-                            <li>30 mins: 1 Reel Record/Edit</li>
-                            <li>30 mins: Blog Post Writing</li>
-                            <li>20 mins: Social Media Engagement</li>
-                            <li>10 mins: Idea Collection</li>
+                            <li>Create "Quick Tip" videos from books</li>
+                            <li>Example: "SEO Tip from Page 45"</li>
+                            <li>Add call-to-action: "Get full book"</li>
+                            <li>Engage with 5 comments on each video</li>
                         </ul>
                     </div>
                     
                     <div class="task-box weekend">
                         <div class="task-title"><i class="fas fa-weekend"></i> Weekend Tasks</div>
                         <ul class="task-list">
-                            <li>2 hours: 2 Blog Posts + 1 YouTube Video</li>
-                            <li>1 hour: Facebook Groups Join (10+)</li>
-                            <li>1 hour: Lead Magnet Creation</li>
+                            <li>Create YouTube long-form video (10 mins)</li>
+                            <li>Setup email auto-responder sequence</li>
+                            <li>Design lead magnet: "Free 5 Skills PDF"</li>
+                            <li>Collaborate with 1 micro-influencer</li>
                         </ul>
                     </div>
                     
                     <div class="task-box output">
-                        <div class="task-title"><i class="fas fa-flag-checkered"></i> Week End Output</div>
+                        <div class="task-title"><i class="fas fa-flag-checkered"></i> Week Output</div>
                         <ul class="task-list">
-                            <li>✅ 7 New Instagram Reels</li>
-                            <li>✅ 2 Blog Posts Published</li>
-                            <li>✅ 1 YouTube Long Video</li>
-                            <li>✅ 10+ Facebook Groups Joined</li>
-                            <li>✅ Free Lead Magnet Ready</li>
+                            <li>✅ 7 "Quick Tip" videos</li>
+                            <li>✅ 1 Long YouTube video</li>
+                            <li>✅ Email sequence ready</li>
+                            <li>✅ Lead magnet created</li>
+                            <li>✅ 50+ email subscribers</li>
                         </ul>
                     </div>
                 </div>
@@ -434,38 +827,39 @@
             <div class="week-card">
                 <div class="week-number">3</div>
                 <div class="week-header">
-                    <div class="week-title">Community Building Week</div>
-                    <div class="week-dates">Dec 15-21</div>
+                    <div class="week-title">Traffic Growth Week</div>
+                    <div class="week-dates">Dec 16-22</div>
                 </div>
                 
                 <div class="tasks-grid">
                     <div class="task-box daily">
-                        <div class="task-title"><i class="fas fa-calendar-day"></i> Daily Tasks (1-2 Hours)</div>
+                        <div class="task-title"><i class="fas fa-video"></i> Daily Video Tasks</div>
                         <ul class="task-list">
-                            <li>20 mins: Facebook Groups Engagement</li>
-                            <li>30 mins: Instagram Stories/Interaction</li>
-                            <li>20 mins: Email List Building</li>
-                            <li>20 mins: Content Repurposing</li>
+                            <li>Create "Success Story" videos</li>
+                            <li>Example: "How I learned web development"</li>
+                            <li>Use trending sounds on Instagram</li>
+                            <li>Post in 3 Facebook groups daily</li>
                         </ul>
                     </div>
                     
                     <div class="task-box weekend">
                         <div class="task-title"><i class="fas fa-weekend"></i> Weekend Tasks</div>
                         <ul class="task-list">
-                            <li>2 hours: 10 YouTube Shorts Create</li>
-                            <li>1.5 hours: Email Sequence Setup</li>
-                            <li>30 mins: Influencer Outreach</li>
+                            <li>Run first ad campaign (500 PKR budget)</li>
+                            <li>Create video testimonials from customers</li>
+                            <li>Optimize YouTube channel SEO</li>
+                            <li>Setup Instagram Shopping features</li>
                         </ul>
                     </div>
                     
                     <div class="task-box output">
-                        <div class="task-title"><i class="fas fa-flag-checkered"></i> Week End Output</div>
+                        <div class="task-title"><i class="fas fa-flag-checkered"></i> Week Output</div>
                         <ul class="task-list">
-                            <li>✅ Email List 200+ Subscribers</li>
-                            <li>✅ 10 YouTube Shorts Ready</li>
-                            <li>✅ Active in 5+ Facebook Groups</li>
-                            <li>✅ Email Welcome Sequence</li>
-                            <li>✅ Micro-Influencer Contacts</li>
+                            <li>✅ 7 Success Story videos</li>
+                            <li>✅ First ad campaign running</li>
+                            <li>✅ 3 Customer testimonials</li>
+                            <li>✅ YouTube SEO optimized</li>
+                            <li>✅ 100+ email subscribers</li>
                         </ul>
                     </div>
                 </div>
@@ -475,88 +869,134 @@
             <div class="week-card">
                 <div class="week-number">4</div>
                 <div class="week-header">
-                    <div class="week-title">Launch Preparation Week</div>
-                    <div class="week-dates">Dec 22-31</div>
+                    <div class="week-title">Sales Boost Week</div>
+                    <div class="week-dates">Dec 23-29</div>
                 </div>
                 
                 <div class="tasks-grid">
                     <div class="task-box daily">
-                        <div class="task-title"><i class="fas fa-calendar-day"></i> Daily Tasks (1-2 Hours)</div>
+                        <div class="task-title"><i class="fas fa-video"></i> Daily Video Tasks</div>
                         <ul class="task-list">
-                            <li>30 mins: Ad Creatives Design</li>
-                            <li>30 mins: Pre-Launch Content</li>
-                            <li>20 mins: Website Final Check</li>
-                            <li>20 mins: Sales Page Optimization</li>
+                            <li>Create "Limited Time Offer" videos</li>
+                            <li>"New Year Special Discount" promotion</li>
+                            <li>Live Q&A sessions on Instagram</li>
+                            <li>Countdown to New Year content</li>
                         </ul>
                     </div>
                     
                     <div class="task-box weekend">
                         <div class="task-title"><i class="fas fa-weekend"></i> Weekend Tasks</div>
                         <ul class="task-list">
-                            <li>3 hours: January Week 1 Content Schedule</li>
-                            <li>1 hour: Ads Account Setup</li>
-                            <li>1 hour: Launch Announcement Prep</li>
+                            <li>Create bundle offers (3 books package)</li>
+                            <li>Setup New Year giveaway contest</li>
+                            <li>Email campaign for holiday sale</li>
+                            <li>Plan January content calendar</li>
                         </ul>
                     </div>
                     
                     <div class="task-box output">
-                        <div class="task-title"><i class="fas fa-flag-checkered"></i> Week End Output</div>
+                        <div class="task-title"><i class="fas fa-flag-checkered"></i> Week Output</div>
                         <ul class="task-list">
-                            <li>✅ 3 Ad Variations Ready</li>
-                            <li>✅ January Week 1 Content Scheduled</li>
-                            <li>✅ Launch Announcement Posts</li>
-                            <li>✅ Website Fully Optimized</li>
-                            <li>✅ Payment System Tested</li>
+                            <li>✅ 7 Promotional videos</li>
+                            <li>✅ Bundle offers created</li>
+                            <li>✅ Giveaway contest running</li>
+                            <li>✅ Email campaign sent</li>
+                            <li>✅ January plan ready</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New Year Week -->
+            <div class="week-card">
+                <div class="week-number">NY</div>
+                <div class="week-header">
+                    <div class="week-title">New Year Launch</div>
+                    <div class="week-dates">Dec 30 - Jan 1</div>
+                </div>
+                
+                <div class="tasks-grid">
+                    <div class="task-box daily">
+                        <div class="task-title"><i class="fas fa-video"></i> Special Tasks</div>
+                        <ul class="task-list">
+                            <li>"New Year, New Skills" video series</li>
+                            <li>2025 Skills Prediction videos</li>
+                            <li>Thank you message to subscribers</li>
+                            <li>Launch New Year discount (20% OFF)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="task-box output">
+                        <div class="task-title"><i class="fas fa-flag-checkered"></i> New Year Results</div>
+                        <ul class="task-list">
+                            <li>🎯 30+ Videos created in December</li>
+                            <li>🎯 200+ Email subscribers</li>
+                            <li>🎯 1000+ Social media followers</li>
+                            <li>🎯 First 50 sales achieved</li>
+                            <li>🎯 System ready for 2025 scaling</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         
+        <!-- Checklist -->
         <div class="checklist">
-            <h3><i class="fas fa-tasks"></i> January 2026 Launch Day Checklist</h3>
+            <h3><i class="fas fa-tasks"></i> DAILY CHECKLIST (Tick when done)</h3>
             <div class="checkbox-item">
                 <input type="checkbox" id="task1">
-                <label for="task1">All Social Media Posts Scheduled (8 AM)</label>
+                <label for="task1">1 Video created and edited</label>
             </div>
             <div class="checkbox-item">
                 <input type="checkbox" id="task2">
-                <label for="task2">First Ad Campaign Started (1000 PKR Budget)</label>
+                <label for="task2">Posted on Instagram + YouTube</label>
             </div>
             <div class="checkbox-item">
                 <input type="checkbox" id="task3">
-                <label for="task3">Email Broadcast Sent to Subscribers</label>
+                <label for="task3">Engaged in 2 Facebook groups</label>
             </div>
             <div class="checkbox-item">
                 <input type="checkbox" id="task4">
-                <label for="task4">Live Q&A Session Announcement</label>
+                <label for="task4">Replied to all comments</label>
             </div>
             <div class="checkbox-item">
                 <input type="checkbox" id="task5">
-                <label for="task5">Limited Time Offer Activated</label>
+                <label for="task5">Checked analytics (what worked?)</label>
             </div>
         </div>
         
+        <!-- Final Tips -->
+        <div class="important-note">
+            <h4><i class="fas fa-graduation-cap"></i> PRO TIPS FOR SUCCESS:</h4>
+            <ul class="task-list" style="margin-top: 10px;">
+                <li><strong>Batch Work:</strong> Sunday ko 7 videos banayo, poora week ke liye</li>
+                <li><strong>Repurpose:</strong> 1 video = Instagram Reel + YouTube Short + Facebook Video</li>
+                <li><strong>Call-to-Action:</strong> Har video ke end mein store ka link mention karo</li>
+                <li><strong>Consistency:</strong> Roz same time post karo (e.g., 7 PM)</li>
+                <li><strong>Engagement:</strong> Comments ka reply zaroor do - community build karo</li>
+            </ul>
+        </div>
+        
         <a href="#" class="download-btn" onclick="saveAsPDF()">
-            <i class="fas fa-download"></i> Save This Roadmap
+            <i class="fas fa-download"></i> Download This Roadmap
         </a>
         
         <div class="footer">
             <p><i class="fas fa-lightbulb"></i> Tip: Save this page to your mobile home screen for quick access!</p>
-            <p>Designed for Student Entrepreneurs | December 2025 Launch Plan</p>
+            <p>Designed for GROWZIO BOOKS | December 2024 - January 2025 Action Plan</p>
         </div>
     </div>
 
     <script>
-        // Function to save as PDF (simulated - for mobile saving)
+        // Function to save as PDF
         function saveAsPDF() {
             alert("Mobile mein: 1. Screenshot lein ya 2. Browser ke menu se 'Save Page' use karein");
             
             // For mobile browsers - show saving options
             if (navigator.share) {
                 navigator.share({
-                    title: 'Student Entrepreneur Roadmap',
-                    text: 'December 2025 Business Launch Plan',
+                    title: 'GROWZIO BOOKS Roadmap',
+                    text: 'December 2024 - January 2025 Action Plan',
                     url: window.location.href
                 })
                 .then(() => console.log('Shared successfully'))
@@ -599,9 +1039,76 @@
             const options = { year: 'numeric', month: 'long', day: 'numeric' };
             const dateString = now.toLocaleDateString('en-US', options);
             
-            // You can add date display if needed
-            // document.querySelector('.footer').innerHTML += `<p>Generated on: ${dateString}</p>`;
+            // Add motivational message
+            const motivation = document.createElement('div');
+            motivation.className = 'quote-box';
+            motivation.innerHTML = `<i class="fas fa-quote-left"></i> Starting today: ${dateString}. 30 days from now, you'll thank yourself for starting today.`;
+            document.querySelector('.container').insertBefore(motivation, document.querySelector('.timeline'));
         });
+        
+        // Add animation to week cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Initially set cards for animation
+        document.querySelectorAll('.week-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+        
+        // Progress tracking
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.checkbox-item input:checked');
+            const total = document.querySelectorAll('.checkbox-item input').length;
+            const progress = (checkboxes.length / total) * 100;
+            
+            // Create progress bar if not exists
+            let progressBar = document.getElementById('progress-bar');
+            if (!progressBar) {
+                progressBar = document.createElement('div');
+                progressBar.id = 'progress-bar';
+                progressBar.style.position = 'fixed';
+                progressBar.style.bottom = '0';
+                progressBar.style.left = '0';
+                progressBar.style.width = '100%';
+                progressBar.style.height = '5px';
+                progressBar.style.background = '#e0e0e0';
+                progressBar.style.zIndex = '1000';
+                
+                const progressFill = document.createElement('div');
+                progressFill.id = 'progress-fill';
+                progressFill.style.height = '100%';
+                progressFill.style.background = '#81B441';
+                progressFill.style.transition = 'width 0.3s ease';
+                progressFill.style.width = '0%';
+                
+                progressBar.appendChild(progressFill);
+                document.body.appendChild(progressBar);
+            }
+            
+            document.getElementById('progress-fill').style.width = `${progress}%`;
+        }
+        
+        // Update progress when checkboxes change
+        document.querySelectorAll('.checkbox-item input').forEach(checkbox => {
+            checkbox.addEventListener('change', updateProgress);
+        });
+        
+        // Initialize progress
+        updateProgress();
     </script>
 </body>
 </html>
